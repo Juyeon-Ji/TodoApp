@@ -53,7 +53,7 @@ public class TodoController {
     public ResponseEntity<?> deleteOne(@PathVariable Long id) {
         LOGGER.info("DELETE ONE: " + id);
         this.service.deleteById(id);
-        return  ResponseEntity.ok().build();
+        return ResponseEntity.ok().build();
     }
 
 }
